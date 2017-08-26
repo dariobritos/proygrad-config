@@ -6,11 +6,13 @@ eureka:
         fetchRegistry: false
         service-url:
             defaultZone: http://localhost:1111/eureka
+    server:
+        eviction-interval-timer-in-ms: 1000
     instance:
         instance-id: ${spring.application.name}:${random.int}      
 logging:  
     file: logs/${spring.application.name}.log
     level:
         com.netflix.discovery: 'OFF'
-        org.springframework.cloud: 'DEBUG'
-        com.atsistemas: 'DEBUG'
+        org.springframework.cloud: 'INFO'
+        com.atsistemas: 'INFO'
