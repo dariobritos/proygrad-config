@@ -1,5 +1,5 @@
 server:
-    port: 58585   # Puerto 80 para fases de desarrollo, luego cambiar por: 0 random HTTP port
+    port: 0   # random HTTP port
 
 logging:
     file: logs/${spring.application.name}.log
