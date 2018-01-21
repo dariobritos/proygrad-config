@@ -18,10 +18,13 @@ hibernate.batch.size: 20
 hibernate.current.session.context.class: org.springframework.orm.hibernate5.SpringSessionContext
 hibernate.dialect: org.hibernate.dialect.HSQLDialect
 
+
+
+
 # MariaDB
 hibernate.connection.autocommit: true
 hibernate.connection.driver_class: org.mariadb.jdbc.Driver
-hibernate.connection.url: crackintelligencedb.camcf1xbrtn0.us-west-2.rds.amazonaws.com
+hibernate.connection.url: jdbc:mysql://crackintelligencedb.camcf1xbrtn0.us-west-2.rds.amazonaws.com/database:3306/database?useSSL=false
 hibernate.connection.username: master
 hibernate.connection.password: 12345678
 hibernate.connection.properties: useLegacyDatetimeCode=false&serverTimezone=GMT
