@@ -24,7 +24,7 @@ hibernate.dialect: org.hibernate.dialect.HSQLDialect
 # MariaDB
 hibernate.connection.autocommit: true
 hibernate.connection.driver_class: org.mariadb.jdbc.Driver
-hibernate.connection.url: jdbc:mysql://crackintelligencedb.camcf1xbrtn0.us-west-2.rds.amazonaws.com/crackintelligence:3306
+hibernate.connection.url: jdbc:mysql://crackintelligencedb.camcf1xbrtn0.us-west-2.rds.amazonaws.com/crackintelligence
 hibernate.connection.username: master
 hibernate.connection.password: 12345678
 hibernate.connection.properties: useLegacyDatetimeCode=false&serverTimezone=GMT
