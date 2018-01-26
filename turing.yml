@@ -14,16 +14,29 @@ eureka:
         instance-id: ${spring.application.name}:${random.int}
 
 
-
-# datasource 
-datasource.driver: org.hsqldb.jdbcDriver
-datasource.url: jdbc:hsqldb:mem:testdb
-datasource.username: sa
-datasource.password: 
-
 #Hibernate
-hibernate.dialect: org.hibernate.dialect.HSQLDialect
-hibernate.hbm2ddl.auto: create-drop
-hibernate.show_sql: true
 hibernate.batch.size: 20
 hibernate.current.session.context.class: org.springframework.orm.hibernate5.SpringSessionContext
+hibernate.dialect: org.hibernate.dialect.HSQLDialect
+
+# MariaDB
+hibernate.connection.autocommit: true
+hibernate.connection.driver_class: org.mariadb.jdbc.Driver
+hibernate.connection.url: jdbc:mysql://crackintelligencedb.camcf1xbrtn0.us-west-2.rds.amazonaws.com/crackintelligence
+hibernate.connection.username: master
+hibernate.connection.password: 12345678
+hibernate.connection.properties: useLegacyDatetimeCode=false&serverTimezone=GMT
+
+hibernate.c3p0.min_size : 5
+hibernate.c3p0.max_size: 10
+hibernate.c3p0.idle_test_period: 60
+hibernate.c3p0.max_connection_age: 14400
+hibernate.c3p0.max_statements : 2000
+hibernate.c3p0.max_statements_per_connection: 100
+hibernate.c3p0.num_helper_threads: 8
+
+hibernate.bytecode.use_reflection_optimizer: true
+hibernate.format_sql: true
+hibernate.generate_statistics: false
+hibernate.hbm2ddl.auto: none
+hibernate.show_sql : true
