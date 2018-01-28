@@ -16,7 +16,7 @@ eureka:
 #Hibernate
 hibernate.batch.size: 20
 hibernate.current.session.context.class: org.springframework.orm.hibernate5.SpringSessionContext
-hibernate.dialect: org.hibernate.dialect.HSQLDialect
+hibernate.dialect: org.hibernate.dialect.MariaDBDialect
 
 hibernate.connection.autocommit: true
 hibernate.connection.driver_class: org.mariadb.jdbc.Driver
