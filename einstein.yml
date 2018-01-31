@@ -34,9 +34,9 @@ hibernate.c3p0.max_statements_per_connection: 100
 hibernate.c3p0.num_helper_threads: 8
 
 hibernate.bytecode.use_reflection_optimizer: true
-hibernate.format_sql: true
+hibernate.format_sql: false
 hibernate.generate_statistics: false
 hibernate.hbm2ddl.auto: none
-hibernate.show_sql : true
+hibernate.show_sql : false
 
 limit.query.pending.task : 10
