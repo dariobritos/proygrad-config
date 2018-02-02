@@ -39,4 +39,6 @@ hibernate.bytecode.use_reflection_optimizer: true
 hibernate.format_sql: true
 hibernate.generate_statistics: false
 hibernate.hbm2ddl.auto: none
-hibernate.show_sql : true
+hibernate.show_sql : false
+
+limit.query.pending.task : 10
