@@ -1,5 +1,5 @@
 server:
-    port: 9040   # random HTTP port
+    port: 0 # random HTTP port
 
 logging:
     file: logs/${spring.application.name}.log
