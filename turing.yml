@@ -17,7 +17,7 @@ eureka:
 #Hibernate
 hibernate.batch.size: 20
 hibernate.current.session.context.class: org.springframework.orm.hibernate5.SpringSessionContext
-hibernate.dialect: org.hibernate.dialect.HSQLDialect
+hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
 # MariaDB
 hibernate.connection.autocommit: true
@@ -36,7 +36,7 @@ hibernate.c3p0.max_statements_per_connection: 100
 hibernate.c3p0.num_helper_threads: 8
 
 hibernate.bytecode.use_reflection_optimizer: true
-hibernate.format_sql: true
+hibernate.format_sql: false
 hibernate.generate_statistics: false
 hibernate.hbm2ddl.auto: none
 hibernate.show_sql : false
