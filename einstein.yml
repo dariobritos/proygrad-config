@@ -1,22 +1,22 @@
 server:
-    port: 0   # random HTTP port
+    port: 9041 #0   # random HTTP port
 
 logging:
     file: logs/${spring.application.name}.log
     level:
         org.springframework.cloud: 'DEBUG'
         com.proygrad: 'DEBUG'
-eureka:  
+eureka:
     client:
         serviceUrl:
-            defaultZone: http://localhost:1111/eureka/ 
+            defaultZone: http://localhost:1111/eureka/
     instance:
         instance-id: ${spring.application.name}:${random.int}
 
 #Hibernate
 hibernate.batch.size: 20
 hibernate.current.session.context.class: org.springframework.orm.hibernate5.SpringSessionContext
-hibernate.dialect: org.hibernate.dialect.MariaDBDialect
+hibernate.dialect: org.hibernate.dialect.HSQLDialect
 
 hibernate.connection.autocommit: true
 hibernate.connection.driver_class: org.mariadb.jdbc.Driver
