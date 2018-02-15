@@ -38,3 +38,5 @@ turing.hibernate.format_sql: false
 turing.hibernate.generate_statistics: false
 turing.hibernate.hbm2ddl.auto: none
 turing.hibernate.show_sql : false
+
+limit.query.request.calculation : 10
