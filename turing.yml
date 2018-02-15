@@ -16,7 +16,7 @@ eureka:
 #Hibernate
 turing.hibernate.batch.size: 20
 turing.hibernate.current.session.context.class: org.springframework.orm.hibernate5.SpringSessionContext
-turing.hibernate.dialect: org.hibernate.dialect.HSQLDialect
+turing.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 
 turing.hibernate.connection.autocommit: true
 turing.hibernate.connection.driver_class: org.mariadb.jdbc.Driver
