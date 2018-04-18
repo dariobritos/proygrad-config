@@ -3,11 +3,11 @@ zuul:
         picasso-server:
             path: /**
             serviceId: picasso
-            sensitiveHeaders: Cookie,Set-Cookie,Authorization
+            sensitiveHeaders: 
         picasso-server-1:
             path: /**/**
             serviceId: picasso
-            sensitiveHeaders: Cookie,Set-Cookie,Authorization
+            sensitiveHeaders: 
 
 server:
     port: 80
