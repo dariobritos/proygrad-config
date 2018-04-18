@@ -1,13 +1,13 @@
 zuul:
-  routes:
-    picasso-server:
-      path: /**
-      serviceId: picasso
+    routes:
+        picasso-server:
+            path: /**
+            serviceId: picasso
 
 
 server:
-  port: 80
+    port: 80
 eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://ec2-54-186-170-135.us-west-2.compute.amazonaws.com:1111/eureka/
+    client:
+        serviceUrl:
+            defaultZone: http://ec2-54-186-170-135.us-west-2.compute.amazonaws.com:1111/eureka/
