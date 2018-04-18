@@ -11,3 +11,5 @@ eureka:
     client:
         serviceUrl:
             defaultZone: http://ec2-54-186-170-135.us-west-2.compute.amazonaws.com:1111/eureka/
+    instance:
+        instance-id: ${spring.application.name}:${random.int}
