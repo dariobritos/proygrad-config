@@ -1,9 +1,11 @@
 zuul:
     routes:
         picasso-server:
-            path: *
+            path: /**
             serviceId: picasso
-
+        picasso-server-1:
+            path: /**/**
+            serviceId: picasso
 
 server:
     port: 80
